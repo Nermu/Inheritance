@@ -1,10 +1,8 @@
 package inheritance;
 
-public interface Birds extends Animals{
-//    public Birds(String type, String food, int noOfLegs, String color) {
-//        super(type, food, 2 ,color);
-//    }
-
-
-
+public interface Birds extends Animals {
+    @Override
+    default void eat(){
+        System.out.println("Birds eat insects");
+    }
 }
